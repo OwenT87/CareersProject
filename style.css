@@ -1,13 +1,26 @@
 /* General Reset */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #1E3A5F; /* Darker Blue */
 }
+
+.container {
+    margin: 40px;
+}
+
+
 
 /* Title Styling */
 h1 {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px auto; /* Center the margin horizontally */
+    font-size: 3rem; /* Increase font size */
+    color: #A83232; /* Dark Red */
+    border: 3px solid #B84545; /* Dark Coral */
+    border-radius: 20px; /* Rounded edges for a bubbly effect */
+    padding: 15px 25px; /* Adjust padding for consistency */
+    background-color: #D9B59C; /* Muted Peach */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Add a playful font */
 }
 
 /* Navigation Bar Styling */
@@ -22,10 +35,9 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 20px; /* Space between navigation items */
-    background-color: #f4f4f4; /* Light background for the nav bar */
+    background-color: #D9B59C; /* Muted Peach */
     border-radius: 10px; /* Rounded edges */
     padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 nav ul li {
@@ -34,33 +46,29 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #333; /* Dark Gray */
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #007BFF; /* Highlight color */
+    background-color: #8B2500; /* Dark Brownish Red */
     color: white;
 }
 
 /* Grid Content Styling */
 .grid-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
     gap: 20px; /* Space between grid items */
-    margin-top: 20px; /* Space between the title and the grid */
 }
 
 /* Box Styling */
-.cmBox, .ebox, .nbox {
-    background-color: #f9f9f9; /* Light background for boxes */
-    border: 1px solid #ddd; /* Subtle border */
-    border-radius: 10px; /* Rounded corners */
+.box {
+    background-color: #D9A78A; /* Muted Bisque */
+    border-radius: 20px; /* Increase the curve for each box */
     padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 h2 {
@@ -68,3 +76,35 @@ h2 {
     margin-bottom: 15px;
 }
 
+.grid-content :nth-child(5) {
+    grid-column: span 2; /* Make the 5th box span 2 columns */
+}
+
+.college {
+    background-color: #B04A3A; /* Muted Salmon */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Add margin */
+}
+
+.trades {
+    background-color: #B05A00; /* Muted Orange */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Add margin */
+}
+
+.nfedu {
+    background-color: #A8453A; /* Muted Red */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Add margin */
+}
+
+.introduction {
+    background-color: #D9A37A; /* Muted Moccasin */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
