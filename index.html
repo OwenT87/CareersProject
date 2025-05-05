@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Careers Project</h1>
+    <div class="title">
+        <h1>Careers Project</h1>
+        <p>By Owen Thompson</p>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#construction-manager" onclick="toggleDetails(event, 'construction-manager')">Construction Manager</a></li>
+                <li><a href="#electrician" onclick="toggleDetails(event, 'electrician')">Electrician</a></li>
+                <li><a href="#military" onclick="toggleDetails(event, 'military')">Military</a></li>
+            </ul>
+        </nav>
+    </div>
+    
     <div class="introduction">
         <h2>Introduction</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#construction-manager" onclick="toggleDetails(event, 'construction-manager')">Construction Manager</a></li>
-            <li><a href="#electrician" onclick="toggleDetails(event, 'electrician')">Electrician</a></li>
-            <li><a href="#military" onclick="toggleDetails(event, 'military')">Military</a></li>
-        </ul>
-    </nav>
 
     <div class="container">
         <details class="college" id="construction-manager">
@@ -113,6 +117,10 @@
             </div>
         </details>
     </div>
+
+    <footer class="footer">
+        <p>Owen Thompson is a passionate student exploring career opportunities in various fields. He enjoys learning, creating projects, and sharing knowledge with others.</p>
+    </footer>
 
     <script>
         function toggleDetails(event, id) {

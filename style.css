@@ -1,43 +1,50 @@
 /* General Reset */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1E3A5F; /* Darker Blue */
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5; /* Softer Light Gray */
+    color: #333; /* Neutral Dark Gray */
+    margin: 0;
+    padding: 0;
+    line-height: 1.8; /* Slightly increased line height for readability */
 }
 
 .container {
-    margin: 40px;
+    margin: 40px auto;
+    max-width: 1400px; /* Center content and limit width */
+    padding: 0 30px; /* Add more padding for spacing */
 }
 
-
-
 /* Title Styling */
-h1 {
+.title {
     text-align: center;
-    margin: 20px auto; /* Center the margin horizontally */
-    font-size: 3rem; /* Increase font size */
-    color: #A83232; /* Dark Red */
-    border: 3px solid #B84545; /* Dark Coral */
-    border-radius: 20px; /* Rounded edges for a bubbly effect */
-    padding: 15px 25px; /* Adjust padding for consistency */
-    background-color: #D9B59C; /* Muted Peach */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Add a playful font */
+    font-size: 2.5rem; /* Slightly larger font size for title */
+    padding: 30px 0; /* Add more padding for spacing */
+    background-color: #1F1F1F; /* Darker Gray for a cleaner look */
+    color: #FFD700; /* Bright Gold */
+    border-bottom: 5px solid #FFD700; /* Thicker bottom border for emphasis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.title p {
+    font-size: 1.3rem; /* Slightly larger font size for subtitle */
+    margin: 10px 0 0; /* Add spacing below the title */
+    color: #E0E0E0; /* Softer Light Gray for contrast */
 }
 
 /* Navigation Bar Styling */
 nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Place it below the title */
+    background-color: #222; /* Darker Gray */
+    padding: 15px 0; /* Add more padding for spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
-    gap: 20px; /* Space between navigation items */
-    background-color: #D9B59C; /* Muted Peach */
-    border-radius: 10px; /* Rounded edges */
-    padding: 10px 20px;
+    justify-content: center;
+    gap: 40px; /* Increase spacing between items */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -46,65 +53,92 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333; /* Dark Gray */
+    color: #FFD700; /* Bright Gold */
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 10px 20px; /* Add more padding for spacing */
     border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
 nav ul li a:hover {
-    background-color: #8B2500; /* Dark Brownish Red */
-    color: white;
+    background-color: #FFD700; /* Bright Gold */
+    color: #222; /* Darker Gray */
 }
 
 /* Grid Content Styling */
 .grid-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Increase spacing between grid items */
+    margin-top: 30px;
 }
 
 /* Box Styling */
 .box {
-    background-color: #D9A78A; /* Muted Bisque */
-    border-radius: 20px; /* Increase the curve for each box */
-    padding: 15px;
+    background-color: #FFF; /* White */
+    border: 1px solid #DDD; /* Light Gray Border */
+    border-radius: 10px;
+    padding: 25px; /* Add more padding for spacing */
+    color: #000; /* Black text */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
 
 h2 {
     text-align: center;
     margin-bottom: 15px;
+    color: #333; /* Neutral Dark Gray */
+    font-size: 1.8rem;
 }
 
 .grid-content :nth-child(5) {
-    grid-column: span 2; /* Make the 5th box span 2 columns */
+    grid-column: span 2; /* Make the 5th box span two columns */
+}
+
+/* Section Styling */
+.college, .trades, .nfedu {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    color: #FFF; /* White */
+    max-width: 1600px; /* Increase maximum width */
+    margin-left: auto; /* Center the sections */
+    margin-right: auto; /* Center the sections */
 }
 
 .college {
-    background-color: #B04A3A; /* Muted Salmon */
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 15px; /* Add margin */
+    background-color: #3A3A3A; /* Darker Gray */
 }
 
 .trades {
-    background-color: #B05A00; /* Muted Orange */
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 15px; /* Add margin */
+    background-color: #FF6347; /* Bright Tomato */
 }
 
 .nfedu {
-    background-color: #A8453A; /* Muted Red */
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 15px; /* Add margin */
+    background-color: #4682B4; /* Steel Blue */
 }
 
+/* Introduction Styling */
 .introduction {
-    background-color: #D9A37A; /* Muted Moccasin */
-    padding: 20px;
+    background-color: #FFF; /* White */
+    padding: 30px;
     border-radius: 10px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1000px; /* Increase maximum width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #333; /* Neutral Dark Gray */
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    background-color: #2B2B2B; /* Dark Gray */
+    color: #FFD700; /* Bright Gold */
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #FFD700; /* Add a border to separate the footer */
+    font-size: 1rem;
 }
