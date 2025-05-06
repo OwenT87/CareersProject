@@ -132,6 +132,10 @@ h2 {
     color: #333; /* Neutral Dark Gray */
 }
 
+.introduction p {
+    text-indent: 2em;
+}
+
 /* Footer Styling */
 .footer {
     text-align: center;
