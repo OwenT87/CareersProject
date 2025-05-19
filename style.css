@@ -80,7 +80,7 @@ nav ul li a:hover {
 /* Ensure .nfedu is a grid container */
 .grid-content .nfedu {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr)); /
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
     gap: 30px; /* Space between items */
 }
 #nfeduJobs{
