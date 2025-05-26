@@ -77,11 +77,19 @@ nav ul li a:hover {
     margin-top: 30px;
 }
 
+/* Trade Grid Content*/
+
 #tradeElectrician {
     grid-column: 1 / 3; /* Span two columns */
     grid-row: 1 / 2; /* First row */
 }
+
+#tradeTraining {
+    grid-column: 2 / -1; /* Third column */
+}
+
 /* grid content for nfedu */
+
 .grid-content .nfedu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
