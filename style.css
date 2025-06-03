@@ -1,11 +1,11 @@
 /* General Reset */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif New Roman;
     background-color: #F5F5F5; /* Softer Light Gray */
     color: #333; /* Neutral Dark Gray */
     margin: 0;
     padding: 0;
-    line-height: 1.8; /* Slightly increased line height for readability */
+    line-height: 2; /* Slightly increased line height for readability */
 }
 
 .container {
@@ -75,6 +75,8 @@ nav ul li a:hover {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive grid */
     gap: 30px; /* Increase spacing between grid items */
     margin-top: 30px;
+    align-items: center; /* Vertically center content in grid cells */
+    justify-items: center; /* Horizontally center content in grid cells */
 }
 
 /* Trade Grid Content*/
@@ -86,6 +88,10 @@ nav ul li a:hover {
 
 #tradeTraining {
     grid-column: 2 / -1; /* Third column */
+}
+
+#tradePros {
+    grid-column: 2 / -1;
 }
 
 /* grid content for nfedu */
@@ -130,7 +136,13 @@ nav ul li a:hover {
 
 .grid-content img {
     display: block;
-    margin: 0 auto;
+    margin: 0; /* Remove auto margins, centering is handled by grid */
+    max-width: 100%;
+    height: auto;
+}
+#image4 {
+    grid-column: 3 / 4;
+    grid-row: 8 / 9;
 }
 
 /* Box Styling */
@@ -216,4 +228,16 @@ h2 {
 dfn {
     text-decoration: underline;
     font-style:normal;
+}
+
+.vocab {
+    color:red ;
+}
+
+.figLang {
+    font-weight: bold;
+}
+
+#colBoxPro {
+    grid-column: 2 / 4;
 }
